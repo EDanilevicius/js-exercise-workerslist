@@ -1,0 +1,47 @@
+.main_background{
+    background-image: url(./img/rszytjrae2901.jpg);
+    height: 100vh;
+    background-position: center; 
+}
+.second_background{
+    background-image: url(./img/bridge_under_construction-wallpaper-1600x900.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center; 
+}
+#output_container{
+   /* background-color: rgb(108, 117, 125, 0.5);*/
+}
+@media only screen and (max-width: 900px) {
+    .main_background{
+        background-image: none;
+    }
+    .second_background{
+        background-image: none;
+        height: 0vh;
+    }
+    #output_container{
+        background-color: rgb(108, 117, 125);
+    }
+}
+
+.row{
+    margin: 0px;
+}
+.input_row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.output_row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card{
+    margin: 10px;
+}
+#favoriteButton{
+    margin-bottom: 5px;
+}
+#editButton{
+    margin-bottom: 5px;
+}

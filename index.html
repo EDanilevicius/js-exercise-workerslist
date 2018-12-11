@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Address book</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="main_background">
+    
+    <div class="container" id="input_container">
+
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigation">
+
+            <a class="navbar-brand" href="#">Find Or Be Found</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="about-Link" onclick="aboutFunction()">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input id="searchField" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <button class="btn btn-outline-info my-2 my-sm-0" id="search_button">Search</button>
+            </div>
+
+        </nav>
+
+        <!-- Input content -->
+        <div class="row bg-light justify-content-md-center input_row" id="new_contact">
+
+            <form id="input_form">
+                <div class="form-row" id="form_row">
+                    <div class="form-group col-md-6" id="form_group">
+                        <label for="inputName">Name*</label>
+                        <input type="text" class="form-control" placeholder="First name" id="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Surname</label>
+                        <input type="text" class="form-control" placeholder="Last name" id="surname">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPhone">Phone*</label>
+                        <input type="tel" class="form-control" placeholder="Phone" id="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Job skills*</label>
+                    <input type="text" class="form-control" placeholder="Carpenter, electrician, plumber" id="skills">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City*</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Agree with terms and conditions*
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Sign in</button>
+            </form>
+
+        </div>
+
+        <!-- Output content -->
+
+        <div class="row justify-content-md-center output_row" id="output_container">
+            <!--
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Example profession</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Example city</h6>
+                  <p class="card-text">Some short information about person: name, phone, email.</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Example profession</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Example city</h6>
+                  <p class="card-text">Some short information about person: name, phone, email.</p>
+                </div>
+              </div>
+            -->
+        </div>
+
+    </div>
+</div>
+<div class="second_background"></div>
+
+</body>
+<script src="index.js"></script>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "js-project-ver2",
+  "version": "1.0.0",
+  "description": "Second corrected version of project",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EvaldasD.",
+  "license": "ISC"
+}
